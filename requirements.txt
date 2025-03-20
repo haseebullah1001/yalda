@@ -1,4 +1,3 @@
 python-telegram-bot
-pytgcalls
 requests
 aiohttp
