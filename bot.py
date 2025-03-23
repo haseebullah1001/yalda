@@ -131,4 +131,10 @@ def handle_salam(message):
     response = "ع سلام خوش امدین به گروپ چت جهانی زیبایی های زندگی_𝐋𝐮𝐗"
     bot.reply_to(message, response)
 
+
+@bot.message_handler(func=lambda message: "سرطان کیص" in message.text)
+def handle_salam(message):
+    response = "سرطان بزرگترین شخص در سطح تلگرام و سازنده من است"
+    bot.reply_to(message, response)
+
 bot.polling()
