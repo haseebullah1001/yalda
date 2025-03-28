@@ -149,10 +149,7 @@ def handle_dare(message):
 
 
 
-@bot.message_handler(func=lambda message: "سلام" in message.text)
-def handle_salam(message):
-    response = "ع سلام خوش امدین به گروپ چت جهانی زیبایی های زندگی_𝐋𝐮𝐗"
-    bot.reply_to(message, response)
+
 
 
 @bot.message_handler(func=lambda message: "سرطان کیص" in message.text)
@@ -179,9 +176,22 @@ def handle_salam(message):
 def handle_salam(message):
     response ="نوچ من شوی دارم نامش هم سرطان است"
     bot.reply_to(message, response)
-    
-    
 
+@bot.message_handler(func=lambda message: "بد میکنی بیا پیوی" in message.text)
+def handle_salam(message):
+    response ="سیس اینه میاییم پیویت عشقم"
+    bot.reply_to(message, response)
+
+@bot.message_handler(func=lambda message: "او روبات سگ تو احساسات نداری چی کنمت" in message.text)
+def handle_salam(message):
+    response ="جان من احساسات دارم فامیدی سرطان دیوانه"
+    bot.reply_to(message, response) 
+    
+@bot.message_handler(func=lambda message:"سیس داری لالا" in message.text)
+def handle_salam(message):
+    response ="ههههه سیس جانم"
+    bot.reply_to(message, response) 
+    
 
 
 
