@@ -160,4 +160,29 @@ def handle_salam(message):
     response = "سرطان بزرگترین شخص در سطح تلگرام و سازنده من است"
     bot.reply_to(message, response)
 
+@bot.message_handler(func=lambda message: " من سازنده تو استم جواب بتی" in message.text)
+def handle_salam(message):
+    response = "جانم سازنده من  بگو چی خدمت  اس"
+    bot.reply_to(message, response)
+    
+@bot.message_handler(func=lambda message: " من دق اوردم" in message.text)
+def handle_salam(message):
+    response = "مرگ دق نیار سرطان  لوده"
+    bot.reply_to(message, response)
+
+@bot.message_handler(func=lambda message: "ماچ بتی" in message.text)
+def handle_salam(message):
+    response = "برو نفری خودت ماچ کووو"
+    bot.reply_to(message, response)
+
+@bot.message_handler(func=lambda message: "نی تو خوبیش استی توره ماچ میکنم" in message.text)
+def handle_salam(message):
+    response ="نوچ من شوی دارم نامش هم سرطان است"
+    bot.reply_to(message, response)
+    
+    
+
+
+
+
 bot.polling()
